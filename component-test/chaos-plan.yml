@@ -1,0 +1,19 @@
+name: "Application chaos plan"
+scenarios:
+ - simpleFuck:
+    containers:
+        - applications: 0
+ - scaleFuck:
+    containers:
+        - applications: 5
+ - noMongo:
+    containers:
+        - mongodb: 0
+ - noRabbit:
+    containers:
+        - rabbitmq: 0
+ - alloff:
+    containers:
+        - applications: 0
+        - mongodb: 0
+        - rabbitmq: 0
