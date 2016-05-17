@@ -25,7 +25,7 @@ var eyeosHippie = new EyeosHippie();
 var applicationUrl = '/application/v1/applications';
 
 setup(function (done) {
-	eyeosHippie.login(done, 'fake.user');
+	eyeosHippie.login(done, 'eyeos', 'eyeos');
 });
 
 suite('#applications', function () {
