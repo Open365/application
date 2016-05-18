@@ -1,6 +1,6 @@
 {
   "name": "application",
-  "version": "0.0.252",
+  "version": "0.0.253",
   "description": "The backend application service",
   "main": "eyeos-application.js",
   "author": "eyeOS",
