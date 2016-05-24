@@ -1,8 +1,8 @@
 FROM docker-registry.eyeosbcn.com/alpine6-node-base
 
+ENV WHATAMI sync
 
 ENV InstallationDir /var/service/
-ENV WHATAMI application
 
 WORKDIR ${InstallationDir}
 
