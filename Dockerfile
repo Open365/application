@@ -10,8 +10,7 @@ CMD eyeos-run-server --serf /var/service/src/eyeos-application.js
 
 COPY . ${InstallationDir}
 
-RUN apk update && \
-    /scripts-base/buildDependencies.sh --production --install && \
+RUN /scripts-base/buildDependencies.sh --production --install && \
     npm install --verbose --production && \
     npm cache clean && \
     /scripts-base/buildDependencies.sh --production --purgue && \
