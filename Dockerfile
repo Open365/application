@@ -6,7 +6,7 @@ ENV InstallationDir /var/service/
 
 WORKDIR ${InstallationDir}
 
-CMD eyeos-run-server --serf /var/service/src/eyeos-application.js
+CMD ["eyeos-run-server", "--serf", "/var/service/src/eyeos-application.js"]
 
 COPY . ${InstallationDir}
 
